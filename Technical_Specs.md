@@ -21,7 +21,7 @@
 - `axios`: Chiamate API
 - `vee-validate`: Validazione form
 - `quill`: Editor WYSIWYG
-- `tailwindcss`: Stili UI
+- `bootstrap`: Stili UI
 - Componenti OAuth
 
 ## 🗄️ Modelli Database (MongoDB)
