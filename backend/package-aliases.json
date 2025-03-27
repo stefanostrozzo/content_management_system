@@ -1,0 +1,6 @@
+{
+    "_moduleAliases": {
+      "@utils": "./src/utils",
+      "@routes": "./src/routes"
+    }
+  }

@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "target": "es2020",
+      "module": "commonjs",
+      "outDir": "./dist",
+      "rootDir": ".",
+      "baseUrl": ".",
+      "paths": {
+        "@routes": ["./src/routes/index.ts"],
+        "@utils": ["./src/utils/logger.ts"],
+        "@routes/*": ["./src/routes/*"],
+        "@utils/*": ["./src/utils/*"]
+      },
+      "esModuleInterop": true,
+      "strict": true,
+      "moduleResolution": "node",  // CAMBIATO DA node10 a node
+      "resolveJsonModule": true
+    },
+    "include": ["**/*.ts"],
+    "exclude": ["node_modules"]
+  }
