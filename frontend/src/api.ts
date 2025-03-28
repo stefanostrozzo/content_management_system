@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Crea un'istanza di axios
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL, // Cambia l'URL in base al tuo backend
+  baseURL: import.meta.env.VITE_API_BASE_URL, // Cambia l'URL in base al tuo backend
 });
 
 // Funzione per ottenere i post

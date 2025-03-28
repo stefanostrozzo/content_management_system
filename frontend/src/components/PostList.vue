@@ -15,9 +15,9 @@
   
   onMounted(async () => {
     try {
-      const { data } = await axios.get(import.meta.env.VITE_API_URL + '/posts');
+      const { data } = await axios.get(import.meta.env.VITE_API_BASE_URL + '/posts');
+      console.log(import.meta.env.VITE_API_BASE_URL);
       posts.value = data;
-      console.log(posts.value);
     } catch (error) {
       console.error('Errore nel recupero dei post:', error);
     }

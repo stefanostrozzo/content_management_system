@@ -4,9 +4,14 @@
   "exclude": ["src/**/__tests__/*"],
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-
+    "module": "esnext", // Modifica da es2022 a esnext
+    "moduleResolution": "bundler", // Modifica da node16 a bundler (per Vite)
+    "types": ["vite/client"],
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "target": "esnext", // Aggiungi target
+    "useDefineForClassFields": true, // Necessario per Vue 3
+    "skipLibCheck": true // Consigliato per Vite
   }
 }
